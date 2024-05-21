@@ -1,0 +1,20 @@
+\setuppapersize[A4,landscape]
+\setupcolors[state=start]
+
+\start
+\startMPpage
+StartPage ;
+      width := PaperWidth ; height := PaperHeight ; unit := cm ;
+      drawoptions(withpen pencircle scaled 5pt withcolor black) ;
+      % bounding box
+      path p; p := (0,0)--(0,height)--(width,height)--(width,0)--cycle;
+      draw p;
+      % split
+      % ...
+      % fill
+      % ...
+StopPage ;
+\stopMPpage
+
+\stop
+
